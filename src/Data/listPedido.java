@@ -2,32 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Controlador.Pedido;
+package Data;
 
-import Controlador.Controlador;
+import Modelo.List;
 import Modelo.Pedido;
-import java.util.HashSet;
 import java.util.Set;
 
 /**
  *
  * @author Student
  */
-public class ControladorPedido implements Controlador<Pedido> {
+public class listPedido implements List<Pedido> {
 
-    private Set<Pedido> data;
-    Pedido pedido;
-
-    public ControladorPedido(Set<Pedido> data) {
-        this.data = new HashSet<>();
-    }
-    
-    
     @Override
-    public void insertar(Pedido obj) {
-        if (obj.isComplete()) {
-            
-        }
+    public void insert(Pedido obj) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
@@ -36,19 +25,17 @@ public class ControladorPedido implements Controlador<Pedido> {
     }
 
     @Override
-    public void delete(Pedido obj) {
-        if (this.pedido.isComplete()) {
-       
-        }return remove(pedido);
-    }
-
-    @Override
-    public Pedido read(Object pedido) {
+    public boolean delete(Pedido obj) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public Set<Pedido> readAll() {
+    public Pedido search(Object pedido) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public Set<Pedido> toSet() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
