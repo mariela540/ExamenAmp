@@ -4,9 +4,6 @@
  */
 package Vista;
 
-import Controlador.Pedido.ControladorPedido;
-import Data.listPedido;
-import Modelo.Pedido;
 
 /**
  *
@@ -20,10 +17,6 @@ public class FrmPedido extends javax.swing.JFrame {
     public FrmPedido() {
         initComponents();
         this.setLocationRelativeTo(null);
-        ControladorPedido controladorpedido = new ControladorPedido();
-        Pedido pedido = new Pedido();
-        listPedido list;
-        
     }
 //FrmPantalla frmPantalla = new FrmPantalla();
 //frmPantalla.setVisible(true);
@@ -261,7 +254,5 @@ public class FrmPedido extends javax.swing.JFrame {
     private javax.swing.JTextField txtDescrip;
     private javax.swing.JTextField txtTipo;
     // End of variables declaration//GEN-END:variables
-
-
 
 }
