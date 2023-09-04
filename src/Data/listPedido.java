@@ -14,6 +14,12 @@ import java.util.Set;
  */
 public class listPedido implements List<Pedido> {
 
+    
+    if (listpedido==null) {
+   
+}
+    
+    
     @Override
     public void insert(Pedido obj) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
