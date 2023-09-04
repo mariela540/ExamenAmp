@@ -21,6 +21,10 @@ public class ControladorPedido implements Controlador<Pedido> {
     public ControladorPedido(Set<Pedido> data) {
         this.data = new HashSet<>();
     }
+
+    public ControladorPedido() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
     @Override
@@ -38,8 +42,7 @@ public class ControladorPedido implements Controlador<Pedido> {
     @Override
     public void delete(Pedido obj) {
         if (this.pedido.isComplete()) {
-       
-        }return remove(pedido);
+        }
     }
 
     @Override
@@ -52,4 +55,6 @@ public class ControladorPedido implements Controlador<Pedido> {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
+    
+
 }

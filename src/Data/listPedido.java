@@ -13,16 +13,37 @@ import java.util.Set;
  * @author Student
  */
 public class listPedido implements List<Pedido> {
+    private Set<Pedido> listpedido;
+    Pedido list;
+    
+    public listPedido(Set<Pedido> listpedido, Pedido list) {
+        this.listpedido = listpedido;
+        this.list = list;
+    }
 
-    
-    if (listpedido==null) {
-   
-}
-    
+    public listPedido() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public Set<Pedido> getListpedido() {
+        return listpedido;
+    }
+
+    public void setListpedido(Set<Pedido> listpedido) {
+        this.listpedido = listpedido;
+    }
+
+    public Pedido getList() {
+        return list;
+    }
+
+    public void setList(Pedido list) {
+        this.list = list;
+    }
     
     @Override
     public void insert(Pedido obj) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+
     }
 
     @Override

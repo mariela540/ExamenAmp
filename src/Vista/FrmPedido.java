@@ -4,6 +4,10 @@
  */
 package Vista;
 
+import Controlador.Pedido.ControladorPedido;
+import Data.listPedido;
+import Modelo.Pedido;
+
 /**
  *
  * @author Student
@@ -16,6 +20,9 @@ public class FrmPedido extends javax.swing.JFrame {
     public FrmPedido() {
         initComponents();
         this.setLocationRelativeTo(null);
+        ControladorPedido controladorpedido = new ControladorPedido();
+        Pedido pedido = new Pedido();
+        listPedido list;
         
     }
 //FrmPantalla frmPantalla = new FrmPantalla();
@@ -101,15 +108,15 @@ public class FrmPedido extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtTipo, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtDescrip, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(84, Short.MAX_VALUE))
+                .addGap(24, 24, 24))
         );
 
         jMenu1.setText("PIDA AQUI!!");
@@ -170,7 +177,7 @@ public class FrmPedido extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButtonMenuItem1ActionPerformed
 
     private void txtTipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTipoActionPerformed
-        // TODO add your handling code here:
+       
     }//GEN-LAST:event_txtTipoActionPerformed
 
     private void menuAtencionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuAtencionActionPerformed
@@ -234,4 +241,15 @@ public class FrmPedido extends javax.swing.JFrame {
     private javax.swing.JTextField txtDescrip;
     private javax.swing.JTextField txtTipo;
     // End of variables declaration//GEN-END:variables
+
+private void generarpedido(){
+    
+    String msj= "";
+    listPedido listpe = new listPedido();
+    
+    
+    
+    
+}
+
 }

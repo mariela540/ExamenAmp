@@ -10,9 +10,15 @@ package Modelo;
  */
 public class Pedido implements Entity {
 
+    public static Object insert;
+
     private int contadorPedido = 0;
     private String tipo;
     private String Decripcion;
+
+    public Pedido() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
     public int getContadorPedido() {
         return contadorPedido;
